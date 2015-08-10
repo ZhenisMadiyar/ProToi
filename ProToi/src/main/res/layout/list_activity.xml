@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e3f2f4"
+        android:layout_below="@+id/actionbar">
+
+        <RelativeLayout
+            android:id="@+id/rel_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <biz.franch.protoi2.main_menu.ExpandableHeightListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:footerDividersEnabled="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/listView"
+                android:background="@color/dim_foreground_material_dark" />
+
+            <biz.franch.protoi2.main_menu.ExpandableHeightGridView
+                android:id="@+id/gridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listView"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:isScrollContainer="false"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listView"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#e3f2f4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textViewTitle"
+            android:textSize="20sp"
+            android:textColor="#B4448B"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButton"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

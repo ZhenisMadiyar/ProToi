@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Alexei-master.iml" filepath="$PROJECT_DIR$/Alexei-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProToi/ProToi.iml" filepath="$PROJECT_DIR$/ProToi/ProToi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circleimageview/circleimageview.iml" filepath="$PROJECT_DIR$/circleimageview/circleimageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryCircularPager/libraryCircularPager.iml" filepath="$PROJECT_DIR$/libraryCircularPager/libraryCircularPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library___/library___.iml" filepath="$PROJECT_DIR$/library___/library___.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_image_loader/library_image_loader.iml" filepath="$PROJECT_DIR$/library_image_loader/library_image_loader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_scrolling/library_scrolling.iml" filepath="$PROJECT_DIR$/library_scrolling/library_scrolling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarycColorArt/librarycColorArt.iml" filepath="$PROJECT_DIR$/librarycColorArt/librarycColorArt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/observablescrollview/observablescrollview.iml" filepath="$PROJECT_DIR$/observablescrollview/observablescrollview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample___/sample___.iml" filepath="$PROJECT_DIR$/sample___/sample___.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simpleInfiniteCarouselmaster/simpleInfiniteCarouselmaster.iml" filepath="$PROJECT_DIR$/simpleInfiniteCarouselmaster/simpleInfiniteCarouselmaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/youTubeAndroidAPIDemo/youTubeAndroidAPIDemo.iml" filepath="$PROJECT_DIR$/youTubeAndroidAPIDemo/youTubeAndroidAPIDemo.iml" />
+    </modules>
+  </component>
+</project>

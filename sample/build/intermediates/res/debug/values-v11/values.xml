@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Admin/Desktop/android_app/Alexei-master/sample/src/main/res/values-v11/styles.xml -->
+    <eat-comment/>
+    <style name="ProgressBarStyle" parent="@android:style/Widget.Holo.ProgressBar.Horizontal"/>
+</resources>

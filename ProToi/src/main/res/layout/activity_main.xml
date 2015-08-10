@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/actionBarCustom"
+        android:background="#e3f2f4">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView3"
+            android:background="@drawable/bow"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pro"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView3"
+            android:textSize="20sp"
+            android:textColor="#B4448B"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Той"
+            android:id="@+id/textView3"
+            android:textSize="20sp"
+            android:textColor="#B4448B"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:overScrollMode="never"
+        android:layout_below="@+id/actionBarCustom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/listViewMainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myviewpager"
+        android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarMainMenu"
+        android:layout_below="@+id/myviewpager"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No Internet Connection"
+        android:id="@+id/textViewNet"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewSplash"
+        android:background="@mipmap/splash"/>
+</RelativeLayout>

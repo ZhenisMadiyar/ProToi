@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#112736">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:textColor="#fff" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pagerVideo"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/textView"
+                android:overScrollMode="never" />
+
+            <RelativeLayout
+                android:id="@+id/viewPagerIndicatorVideo"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/view_pagerVideo"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="250dp">
+                <LinearLayout
+                    android:id="@+id/viewPagerCountDotsVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/view_pagerVideo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:background="#008000"
+                android:text="@string/call"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/max_height_header"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            android:overScrollMode="never" />
+        <FrameLayout
+            android:id="@+id/header_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/min_height_textheader_materiallike"
+            android:layout_gravity="bottom"
+            android:background="#112736">
+
+            <ImageButton
+                android:id="@+id/imageButtonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_action_back_white" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="20dp"
+                android:text="..."
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewPagerIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="250dp">
+            <LinearLayout
+                android:id="@+id/viewPagerCountDots"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarViewPager"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

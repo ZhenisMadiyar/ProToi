@@ -1,0 +1,1 @@
+include ':app', ':sample___', ':library___', ':youTubeAndroidAPIDemo', ':simpleInfiniteCarouselmaster', ':ProToi', ':library_image_loader', ':library_scrolling', ':circleimageview', ':observablescrollview', ':core', ':librarycColorArt', ':libraryCircularPager'
